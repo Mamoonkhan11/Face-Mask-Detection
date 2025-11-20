@@ -1,13 +1,13 @@
 # Face Mask Detection with Live Alert System
 
-## 🧠 Overview
+## Overview
 
 This project detects whether a person is wearing a face mask or not using **TensorFlow/Keras**, **OpenCV**, and **Flask**.
 It performs **real-time detection via webcam**, plays an **alert sound** for “No Mask”, and provides a **modern Flask web interface** with start/stop controls.
 
 ---
 
-## 🚀 Features
+## Features
 
 *  Real-time face detection via webcam using OpenCV
 *  Deep Learning (CNN) model trained on Kaggle dataset
@@ -18,7 +18,7 @@ It performs **real-time detection via webcam**, plays an **alert sound** for “
 
 ---
 
-## 🧰 Technologies Used
+## Technologies Used
 
 | Component       | Technology               |
 | --------------- | ------------------------ |
@@ -31,7 +31,7 @@ It performs **real-time detection via webcam**, plays an **alert sound** for “
 
 ---
 
-## 🗂️ Folder Structure
+## Folder Structure
 
 ```
 Face-Detection/
@@ -59,12 +59,12 @@ Face-Detection/
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
-A **CNN (Convolutional Neural Network)** classifies images into:
+**CNN (Convolutional Neural Network)** classifies images into:
 
-* **Mask (1)**
-* **No Mask (0)**
+* **Mask (0)**
+* **No Mask (1)**
 
 ```
 Input (128x128x3)
@@ -77,7 +77,7 @@ Input (128x128x3)
 
 ---
 
-## 🖼️ Demo
+## Demo
 
 ### Detection Example
 
@@ -86,7 +86,7 @@ Input (128x128x3)
 
 ---
 
-## ⚙️ How to Run the Project
+## How to Run the Project
 
 ### 1️⃣ Install Dependencies
 
@@ -119,7 +119,7 @@ http://127.0.0.1:5000
 
 ---
 
-## 🔊 Sound Alert System
+## Sound Alert System
 
 * Plays an alert when **“No Mask”** is detected.
 * Interval between alerts: **1.5 seconds** (configurable in `utils.py`).
@@ -127,7 +127,7 @@ http://127.0.0.1:5000
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 ```
 Python 3.10+
@@ -146,6 +146,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🏁 License
+## License
 
 This project is licensed under the **MIT License**.
