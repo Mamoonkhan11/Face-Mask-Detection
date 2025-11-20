@@ -31,7 +31,7 @@ def load_face_detector(xml_path="src/haarcascade_frontalface_default.xml"):
 def sound_alert():
     global _last_alert_time
     now = time.time()
-    if now - _last_alert_time >= 1.5:
+    if now - _last_alert_time >= 2.5:
         _last_alert_time = now
         threading.Thread(target=_play, daemon=True).start()
 

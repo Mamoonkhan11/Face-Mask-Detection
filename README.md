@@ -82,6 +82,7 @@ Input (128x128x3)
 ### Detection Example
 
 ![Detection Demo](demo.png)
+![Detection Demo](demo2.png)
 
 ---
 

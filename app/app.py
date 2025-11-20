@@ -53,7 +53,7 @@ def gen():
             roi = frame[y:y+h, x:x+w]
             face = cv2.resize(roi, (128, 128)) / 255.0
             pred = model.predict(np.expand_dims(face, 0), verbose=0)[0][0]
-            label = "Mask" if pred > 0.5 else "No Mask"
+            label = "Mask" if pred > 0.3 else "No Mask"
             color = (0, 255, 0) if label == "Mask" else (0, 0, 255)
             cv2.rectangle(frame, (x, y), (x+w, y+h), color, 2)
             cv2.putText(frame, label, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
